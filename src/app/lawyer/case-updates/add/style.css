@@ -1,0 +1,33 @@
+.graph_dev{
+    display: flex !important;
+    width: 65% !important;
+    align-items: center !important;
+    /* justify-content: space-around !important; */
+}
+.graph_input{
+    width: 40% !important;
+    border-radius: 12px !important;
+}
+
+
+.quest_input{
+    width:60% !important;
+}
+
+
+.update-lawyer-in {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+  }
+  
+  .aa-btn-update {
+    color: #fff;
+    background-color: var(--dark);
+    border-radius: 6px;
+    height: 25px;
+    width: 25px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }

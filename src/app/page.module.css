@@ -1,0 +1,18 @@
+.f-32 {
+  font-size: 32px;
+}
+.f-14 {
+  font-size: 14px;
+}
+.lanidng-btn {
+  border: 1px solid #00df9a;
+  background-color: #00df9a;
+  color: #000000;
+  text-align: center;
+  border-radius: 0.625rem;
+  flex: 0 auto;
+  padding: 0.75rem 1.875rem;
+  font-weight: 500;
+  text-decoration: none;
+  transition: all 0.3s;
+}

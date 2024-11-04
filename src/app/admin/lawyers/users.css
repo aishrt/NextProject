@@ -1,0 +1,19 @@
+.adBtn {
+    display: flex;
+    align-items: flex-end;
+    justify-content: flex-end;
+}
+
+.mui-1y4hk2u-MuiButtonBase-root-MuiPaginationItem-root.Mui-selected {
+    background-color: #252B42 !important;
+    color: #fff !important;
+}
+
+input{
+    border: none;
+}
+
+input:focus{
+    border: none;
+    outline: none;
+}

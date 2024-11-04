@@ -1,0 +1,142 @@
+<html lang="en" dir="ltr">
+
+  <head>
+    <meta charset="UTF-8" />
+    <title>DELEGATION OF AUTHORITY MANDATE</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC"
+      crossorigin="anonymous"
+    />
+
+  </head>
+  <style type="text/css">
+    @import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+    @font-face {
+     font-family: 'stRyde';
+     font-display: fallback;
+     src: url('../public/Poppins-Medium.ttf') format("woff"), 
+     url('../public/Poppins-Medium.ttf') format("truetype"), url('') format("otf");
+  }
+    .bill-table table td, .bill-table table th { padding: 5px !important; }
+    body, div, p, h2, h3, h4 { font-family: 'Poppins' !important; }
+    .product-table th, .product-table td { padding: 10px !important; } h4{
+    font-family: 'Montserrat'; font-size: 15px; color: #003250 !important;
+    font-weight: 600; }
+
+    @media print {
+  body, div, p, h2, h3, h4 { font-family: 'Poppins' !important; }
+  .bgclass {
+    background: aqua !important;
+    -webkit-print-color-adjust: exact; 
+    }
+  
+}
+  </style>
+  <body>
+    <div class="pdf-header">
+      <div class="container">
+        <h2
+          style="font-size: 36px; font-weight: bold; padding: 30px;text-align:center;"
+        >Claim Evaluation Report</h2>
+      </div>
+    </div>
+    <table style="width: 100%; padding: 30px;">
+      <tbody>
+        <tr>
+          <td style="background: #ddd; padding: 20px; border-radius: 12px">
+            <div style="background: #ddd; padding: 20px; border-radius: 12px;">
+              {{#questions}}
+                <h4
+                  style="font-size: 18px; color: #003250;background:#808080 !important;display:block !important; font-weight: 600;"
+                >Question: {{question}}</h4>
+                <p class="bgclass"
+                  style="background-color: #ddd;  border-radius: 12px; padding: 10px font-size: 15px;"
+                ><strong>Answer: </strong>{{answer}}</p>
+
+              {{/questions}}
+            </div>
+          </td>
+        </tr>
+      </tbody>
+    </table>
+
+    <div class="main-table" style=" margin: 0 auto; background-color: #D6F4E5; padding: 30px">
+      <div class="container">
+        <div class="bill-table">
+          {{!-- Winning Percent -
+          {{winning_percentage}} --}}
+
+          {{!--         
+   {{#questions}}
+          
+              <h4
+                style="font-family: Montserrat; font-size: 15px; color: #003250; font-weight: 600"
+              > Question: {{question}}</h4>
+              <div style="background-color: #f5f6fa; padding: 20px; border-radius: 12px">
+              <p style="font-family: Montserrat; font-size: 15px; "><strong
+                >Answer: </strong>{{answer}}</p>
+                </div>
+          
+          {{/questions}} --}}
+          <div
+            class="p-3 rounded mb-3 text-center"
+            style="background-color: #D6F4E5;"
+          >
+            <h3 class="f-20">Winning Percentage</h3>
+
+            <div
+              style="position: relative; display: inline-flex; justify-content: center; align-items: center;"
+            >
+              <svg
+                width="200"
+                height="200"
+                style="position: relative; transform: rotate(-90deg);"
+              >
+                <!-- Background Circle -->
+                <circle
+                  cx="100"
+                  cy="100"
+                  r="90"
+                  stroke="lightgrey"
+                  stroke-width="6"
+                  fill="none"
+                />
+
+                <!-- Winning Percentage Segment -->
+                <circle
+                  cx="100"
+                  cy="100"
+                  r="90"
+                  stroke="green"
+                  stroke-width="6"
+                  fill="none"
+                  stroke-dasharray="{{winning_percentage}}, {{25}}"
+                  stroke-dashoffset="{{25}}"
+                />
+              </svg>
+
+              <div
+                style="position: absolute; display: flex; justify-content: center; align-items: center; width: 100%; height: 100%;"
+              >
+                <span style="font-size: 22px; font-weight: 800; color: #003250;">
+                  {{winning_percentage}}%
+                </span>
+              </div>
+            </div>
+          </div>
+
+       
+        </div>
+   <div style="font-size: 18px;"> 
+            <strong style="color: #003250;"> Description</strong>
+           <span style="font-size: 18px;"> -{{description}}</span>
+
+          </div>
+
+      </div>
+    </div>
+  </body>
+</html>

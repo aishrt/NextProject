@@ -1,0 +1,31 @@
+import { RequestType } from "./Request";
+
+export type Financial = {
+  _id: string;
+  case_id: string;
+  user_id: string;
+  platform_commission: number;
+  minimum_amount: number;
+  signature: string;
+  managerSignature: string;
+  clientSignature: string;
+  checked: boolean;
+  platform_commission_description: string;
+  minimum_settle_amount_description: string;
+  isFinancialReport?: boolean;
+  lawyerFinancialReport?: boolean;
+  status?: string;
+  reportStatus?: string;
+  reportId?: string;
+  platformAmount?: number;
+  clientAmount?: number;
+  lawyerAmount?: number;
+  lawyerCommission?: number;
+  lawyer_description?: string;
+  remainingPlatformAmount?: number;
+  requestStatus?: string;
+  request?: RequestType;
+  lawyerManagerSignature: string;
+  lawyerSignature: string;
+  verifyReport: boolean;
+};

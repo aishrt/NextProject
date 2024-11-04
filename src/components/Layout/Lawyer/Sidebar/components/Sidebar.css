@@ -1,0 +1,101 @@
+.main-sidebar span.ps-menu-icon , .main-sidebar  span.menu-icons {
+    height: 35px;
+    width: 35px;
+    /* background: #fff; */
+    margin-right: 2px;
+    border-radius: 6px;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+}
+.main-sidebar a.ps-menu-button.ps-active {
+    border-radius: 30px;
+    background-color: #edf0f3;
+    color: #003250 !important;
+}
+.main-sidebar span.ps-menu-label {
+    font-size: 14px;
+    line-height: 18px;
+    text-align: left;
+    font-weight: 500;
+    color: #64748b;
+    display: flex;
+    align-items: center;
+    gap: 6px;
+}
+.main-sidebar a.ps-menu-button.ps-active {
+    border-radius: 8px;
+}
+.relative { position: relative;}
+.sidebar-navs {
+    padding: 0 10px;
+}
+
+.sidebar-headr {
+    font-size: 14px;
+    font-weight: 700;
+    line-height: 21px;
+    text-align: left;
+    text-transform: uppercase;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    border-bottom: 1px solid #004180;
+    padding-bottom: 12px;
+}
+.sidebar-navs li {
+    margin: 3px 0;
+}
+.sidebar-navs li a.ps-menu-button:hover {
+    background: #fff !important;
+    border-radius: 10px;
+}
+.sidebar-setting {
+    font-size: 14px;
+    font-weight: 700;
+    line-height: 21px;
+    text-align: left;
+    text-transform: uppercase;
+    border-top: 1px solid #004180;
+    padding-bottom: 12px;
+    padding-top: 10px;
+    margin-top: 26px;
+}
+
+.sidebar-div {
+    height: 97vh;
+    width: 270px;
+    overflow-y: auto;
+    position: fixed;
+    top: 15px;
+    left: 15px;
+    bottom: 15px;
+}
+.sidebar-navs li a.ps-menu-button:hover span.ps-menu-label, .main-sidebar a.ps-menu-button.ps-active  span.ps-menu-label {
+    color: #64748b;
+}
+
+.client-sidebar .ps-sidebar-container {
+    background: #fff;
+    color: #64748b;
+    border-radius: 20px;
+}
+.bottom-side nav {
+    position: absolute;
+    right: 0;
+    top: 0px;
+}
+.relative { position: relative;}
+img.avatar-ico {
+    height: 50px;
+    width: 50px;
+    min-width: 50px;
+    border-radius: 100%;
+    object-fit: cover;
+}
+@media (max-width: 767px) {
+    .sidebar-div {
+      /* z-index: 999 !important; */
+      position: absolute !important;
+    }
+  }

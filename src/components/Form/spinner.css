@@ -1,0 +1,23 @@
+.cube-loader {
+    position: relative;
+    width: 50px;
+    height: 50px;
+    transform-style: preserve-3d;
+  }
+  
+  .cube-face {
+    position: absolute;
+    width: 50px;
+    height: 50px;
+    background-color: #625AE9; /* Set your desired color */
+    border:1px solid rgba(255, 255, 255, 0.719);
+    opacity: 0.8;
+  }
+  
+  .cube-face:nth-child(1) { transform: rotateY(0deg) translateZ(25px); }
+  .cube-face:nth-child(2) { transform: rotateY(90deg) translateZ(25px); }
+  .cube-face:nth-child(3) { transform: rotateY(180deg) translateZ(25px); }
+  .cube-face:nth-child(4) { transform: rotateY(-90deg) translateZ(25px); }
+  .cube-face:nth-child(5) { transform: rotateX(90deg) translateZ(25px); }
+  .cube-face:nth-child(6) { transform: rotateX(-90deg) translateZ(25px); }
+  

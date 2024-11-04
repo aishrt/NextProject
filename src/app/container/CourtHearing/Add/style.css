@@ -1,0 +1,54 @@
+.graph_dev{
+    display: flex !important;
+    width: 65% !important;
+    align-items: center !important;
+    /* justify-content: space-around !important; */
+}
+.graph_input{
+    width: 40% !important;
+    border-radius: 12px !important;
+}
+
+
+.quest_input{
+    width:60% !important;
+}
+.indivi-form.lawyer-form  .bglight-ip {
+    background: #F5F6FA;
+    padding: 14px;
+    border: none;
+}
+.lawyer-form .date-input fieldset {
+    border: none !important;
+}
+.lawyer-form .represent-form .MuiAutocomplete-root {
+    background: #f5f6fa;
+    padding: 10px;
+    border-radius: 8px;
+}
+.lawyer-form .represent-form .MuiAutocomplete-root .MuiInputBase-root::before {
+    display: none;
+}
+.address-lawyer > div > div {
+    background: #f5f6fa;
+    border: none;
+    padding: 8px;
+}
+.rminder-date, .remind-card {
+    background-color: #E2E8F0 !important;
+    border-radius: 10px;
+}
+.client-btn {
+    padding: 12px 30px;
+    border-radius: 6px;
+    color: #fff;
+    background-color: var(--dark);
+    box-shadow: none !important;
+  }
+  .case-details-pre.reminder-lawry {
+    border: 1px solid #8280FF;
+    padding: 20px;
+}
+.hearing-calender .MuiDateCalendar-root {
+    width: 100%;
+}
